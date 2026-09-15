@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Govind Yadav — MBA Business Analytics professional focused on Finance, Operations and Business Analytics.">
+<title>Govind Yadav | Finance & Business Analytics</title>
+<style>
+:root{--green:#075c3b;--green2:#0b7a50;--mint:#edf7f1;--ink:#14201a;--muted:#617069;--white:#fff;--line:#dce9e2}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fbfdfc;line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:25px;color:var(--green);letter-spacing:-1px}.logo span{display:block;font-size:10px;color:var(--muted);font-weight:700;letter-spacing:.8px}
+.links{display:flex;gap:24px;font-size:14px;font-weight:650}.links a:hover{color:var(--green2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;background:var(--green);color:white;font-weight:750;border:1px solid var(--green);transition:.2s}.btn:hover{transform:translateY(-2px);background:#064b31}
+.btn.outline{background:white;color:var(--green)}.hero{padding:88px 0 65px;background:linear-gradient(135deg,#f4faf7,#fff)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+.kicker{color:var(--green2);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-3px;margin:12px 0}
+h1 span{color:var(--green)}
+.tagline{font-size:22px;font-weight:750;margin:15px 0;color:#284038}.hero p{font-size:17px;color:var(--muted);max-width:690px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.social{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:14px}
+.profile-card{background:var(--green);border-radius:28px;padding:30px;color:white;box-shadow:0 22px 50px rgba(7,92,59,.18);position:relative;overflow:hidden}
+.profile-card:after{content:"";position:absolute;width:230px;height:230px;border:45px solid rgba(255,255,255,.08);border-radius:50%;right:-110px;top:-90px}
+.monogram{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;border:2px solid rgba(255,255,255,.35);font-size:43px;font-weight:900;margin-bottom:28px}
+.profile-card h3{font-size:25px;margin:0}.profile-card p{color:#d7eee4;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:23px 15px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;color:var(--green);font-size:18px}.stat small{color:var(--muted)}
+section{padding:85px 0}.section-head{margin-bottom:35px}.section-head .eyebrow{color:var(--green2);font-weight:800;text-transform:uppercase;letter-spacing:1.6px;font-size:12px}.section-head h2{font-size:39px;letter-spacing:-1.5px;margin:7px 0}.section-head p{color:var(--muted);max-width:700px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}.about p{color:var(--muted)}
+.pillbox{display:flex;flex-wrap:wrap;gap:10px}.pill{background:var(--mint);border:1px solid #d9ebe1;padding:8px 13px;border-radius:999px;color:var(--green);font-weight:700;font-size:13px}
+.timeline{border-left:2px solid #cfe1d8;padding-left:28px}.item{position:relative;margin-bottom:35px}.item:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--green);left:-35px;top:7px;border:4px solid #edf7f1}.item h3{margin:0 0 4px}.item .date{font-size:13px;color:var(--green2);font-weight:800}.item p{margin:6px 0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 8px 24px rgba(20,50,35,.05);transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(20,50,35,.1)}.icon{width:45px;height:45px;border-radius:12px;background:var(--mint);display:grid;place-items:center;color:var(--green);font-weight:900}.card h3{font-size:18px;line-height:1.25}.card p{font-size:14px;color:var(--muted)}.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:11px;background:#f3f6f4;padding:5px 8px;border-radius:6px;color:#506159}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:45px}.skill{margin:18px 0}.skill-row{display:flex;justify-content:space-between;font-weight:750;font-size:14px}.bar{height:8px;background:#e7eee9;border-radius:99px;overflow:hidden;margin-top:7px}.bar i{display:block;height:100%;background:var(--green);border-radius:99px}
+.contact{background:var(--green);color:white;border-radius:28px;padding:50px}.contact p{color:#d9eee5}.contact .btn{background:white;color:var(--green);border-color:white}
+footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.footer{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.links{display:none}.hero-grid,.about,.skills{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.hero{padding-top:55px}section{padding:60px 0}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}h1{letter-spacing:-2px}.contact{padding:32px}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="logo" href="#home">GY<span>FINANCE • ANALYTICS • GROWTH</span></a>
+<div class="links"><a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+<a class="btn" href="#contact">Let's Connect</a>
+</div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid">
+<div>
+<div class="kicker">MBA Business Analytics</div>
+<h1>Govind <span>Yadav</span></h1>
+<div class="tagline">Finance | Analytics | Problem Solving | Impact</div>
+<p>MBA Business Analytics professional specializing in Finance & Operations, combining financial knowledge with data-driven thinking to solve practical business problems.</p>
+<div class="actions"><a class="btn" href="#projects">View My Work →</a><a class="btn outline" href="#contact">Contact Me</a></div>
+<div class="social"><span>LinkedIn — coming soon</span><span>GitHub — coming soon</span></div>
+</div>
+<div class="profile-card"><div class="monogram">GY</div><h3>Accounts & Finance Head</h3><p>AGSA & Co • Noida</p><hr style="border:0;border-top:1px solid rgba(255,255,255,.2)"><p>Focused on accounting, financial processes, reconciliation, reporting and business analytics.</p></div>
+</div></header>
+
+<div class="stats"><div class="stat"><strong>MBA</strong><small>Business Analytics</small></div><div class="stat"><strong>B.Com (H)</strong><small>BHU • 2021–2024</small></div><div class="stat"><strong>Finance & Operations</strong><small>Specialization</small></div><div class="stat"><strong>Analytics</strong><small>Python • SQL • BI</small></div></div>
+
+<section id="about"><div class="container"><div class="section-head"><div class="eyebrow">Profile</div><h2>About Me</h2></div><div class="about"><div><p>I am pursuing an MBA in Business Analytics with a specialization in Finance & Operations. My goal is to combine financial understanding with analytics to support better business decisions.</p><p>I currently work as an Accounts & Finance Head at AGSA & Co and have previous internship experience in Finance & Accounts at Expedite Impex Pvt. Ltd., where I worked with Tally, tax invoices and accounting procedures.</p></div><div><h3>What I bring</h3><div class="pillbox"><span class="pill">Financial Analysis</span><span class="pill">Accounting</span><span class="pill">Reconciliation</span><span class="pill">Business Analytics</span><span class="pill">Problem Solving</span><span class="pill">Continuous Learning</span><span class="pill">Teamwork</span><span class="pill">Communication</span></div></div></div></div></section>
+
+<section id="education" style="background:#f4faf7"><div class="container"><div class="section-head"><div class="eyebrow">Academic Journey</div><h2>Education</h2></div><div class="timeline">
+<div class="item"><div class="date">MBA • CURRENT</div><h3>MBA — Business Analytics</h3><p>G.L. Bajaj Institute of Technology and Management</p><p><strong>Specialization:</strong> Finance & Operations</p></div>
+<div class="item"><div class="date">2021 — 2024</div><h3>B.Com (Hons.)</h3><p>Banaras Hindu University (BHU)</p></div>
+</div></div></section>
+
+<section id="experience"><div class="container"><div class="section-head"><div class="eyebrow">Professional Experience</div><h2>Experience</h2></div><div class="timeline">
+<div class="item"><div class="date">CURRENT</div><h3>Accounts & Finance Head — AGSA & Co</h3><p>Noida</p><p>Working across accounting and finance processes, reporting, reconciliation and related financial operations.</p></div>
+<div class="item"><div class="date">PREVIOUS</div><h3>Finance & Accounts Intern — Expedite Impex Pvt. Ltd.</h3><p>Hands-on exposure to Tally, tax invoices, accounting entries and company accounting procedures.</p></div>
+</div></div></section>
+
+<section id="projects" style="background:#f4faf7"><div class="container"><div class="section-head"><div class="eyebrow">Selected Work</div><h2>Projects</h2><p>Analytics projects connecting business questions with Python, R, Excel and BI tools.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">01</div><h3>Inventory Optimization using EOQ Model</h3><p>Applied the Economic Order Quantity model to study inventory decisions using Python and R.</p><div class="tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">Operations</span></div></div>
+<div class="card"><div class="icon">02</div><h3>Customer Churn Analysis</h3><p>Analyzed customer churn patterns and explored data-driven insights using Python and R.</p><div class="tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">Analytics</span></div></div>
+<div class="card"><div class="icon">03</div><h3>Customer Satisfaction in Online Shopping</h3><p>Explored customer feedback and satisfaction drivers through business data analysis.</p><div class="tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">Marketing</span></div></div>
+<div class="card"><div class="icon">04</div><h3>Finance & BI Dashboards</h3><p>Designed analytical dashboard concepts for financial performance and business reporting.</p><div class="tags"><span class="tag">Excel</span><span class="tag">Power BI</span><span class="tag">Tableau</span></div></div>
+</div></div></section>
+
+<section id="skills"><div class="container"><div class="section-head"><div class="eyebrow">Toolkit</div><h2>Skills</h2></div><div class="skills">
+<div><div class="skill"><div class="skill-row"><span>Financial Analysis</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div><div class="skill"><div class="skill-row"><span>MS Excel</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div><div class="skill"><div class="skill-row"><span>Accounting & Tally</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div><div class="skill"><div class="skill-row"><span>Power BI / Tableau</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div></div>
+<div><div class="skill"><div class="skill-row"><span>Python</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div><div class="skill"><div class="skill-row"><span>SQL</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div><div class="skill"><div class="skill-row"><span>R Programming</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div><div class="skill"><div class="skill-row"><span>GST / TDS & Reconciliation</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="contact"><div class="eyebrow" style="color:#b9e5d1">Let's Connect</div><h2 style="font-size:40px;margin:8px 0">Let's build something meaningful.</h2><p>Open to conversations around finance, analytics, internships, projects and early-career opportunities.</p><a class="btn" href="mailto:your-email@example.com">Email Me →</a></div></div></section>
+
+<footer><div class="container footer"><div><strong>Govind Yadav</strong><br>Finance | Analytics | Growth</div><div>© 2026 Govind Yadav. Replace placeholder contact links before publishing.</div></div></footer>
+</body></html>
